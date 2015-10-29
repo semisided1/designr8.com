@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>designr8</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="/Skeleton/css/normalize.css">
+  <link rel="stylesheet" href="/Skeleton/css/skeleton.css">
+  <link rel="stylesheet" href="/stylesheets/squish-text.css">
+  <link rel="stylesheet" href="/stylesheets/index.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/ico" href="/images/favicon.ico">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+<div class="container header">
+<h1 class="squish-text-image-replacement" >designr8</h1>
+</div>
+
+<div class="container content"><div class="twelve columns " >
+        
+
+<h4> Project: Photo Gallery on Appengine (java) </h4>
+<p> This web application has 2 parts - the website and the administration of the website. The website has a front page slide show, menu and gallery pages are generated from the admin user interface.</p>
+<p>
+This is a little note to thank my patient customer - Steven - who did contribute a lot to the visual design of the site and of course the awesome photos.
+</p>
+<p>
+The project code is here: <a href="https://github.com/semisided1/slpdotca">
+https://github.com/semisided1/slpdotca
+</a>
+</p><p>
+A live version of the web application is here: <a href="http://stevenlaytonsphotography.ca">
+http://stevenlaytonsphotography.ca
+</a>
+</p>	
+
+<p> Interesting things I could write about from this project: 
+
+<ul>
+<li> 
+Using the xmp tag and jquery to hide/unhide html fragments within a page
+</li>
+<li>
+Using Saxonica s9api / xslt within Appengine
+</li>
+<li>
+Using google feeds api
+</li>
+<li>
+adding a facebook widget
+</li>
+</ul>
+
+<p> This project was started when appengine was just released, before any python or node.js was
+available from google cloud. At this point java and xslt where still thought to be practical for 
+small or medium sized websites. If you look at the code for this project you will be surprised at
+the complexity. A lot of that has to do with xml, google feeds and the hastle of passing around information into xslt. xslt is a great template engine and I generally prefer it to django / php style template systems. There are some real caveats to using xslt!!! Its not easy handling entity references, special characters (ie &lt;!doctype .. ) and just making small changes can 
+get your eyes seeing double: don't forget all your html has to be valid xml.
+</p> 
+<h4> Overall feelings about this project:</h4>
+<p> the website has been in use for several years so despite the complexity it does achieve its main goal: the customer can change
+the photos without my help and is free of clutter from the website visitors perspective. </p>
+
+<h4> administration page (add remove albums from the website)
+
+<img src="https://lh3.googleusercontent.com/9FhSq6h5qFdegJ8E61AxWbxw8EHfqQpwC4Zh41w9iAhACyiEubvtk0VJYn1UGC8igbuCFCgXaYR8i6BenHHSbQTcucj3Jx7IHUXQE1YvtbhFgEz54uvjyKtYQ--YgcTYLxEoNMgQRHtGYexsdDwYT2-3hcTmkk8F2Yc2F4txXfq60H2gvLndVZeMwUrrzXGaXGc-LGX8P6yJVSL8s_BCBSwW6NazMmq7if8wNvrIfL4l3iRjjtrgAZ1OLM8h0OynKVEChil3xuQiy9pN_W-1kw2bAY4lO26goDYPhaZlzcj0ygUR9EI1pyLYiDHTpQ0udRqGy_HT-cGEp786lE9Bzt9cL7vWq3duknmWVl-L_fa5kB9qjbfpL6V58sy7bq1CKXrzhcc8TmWQ4zf1K5sNvUfRQf5-4mbb8eXb5tqfGrZQY3rstQcDczrKnSuB5sZJPniLRu5Ck4V3ChfMsU339m8k5k3pABNbjZ2Ec8NU6rBsy-XSU12HFzckGl5xaDwpRSzsngEa9_VAX3qczJgE9uP9MSKaOu4inGDyqLJ2ATE=w654-h922-no" />
+
+<h4> stevenlaytonsphotography.ca - album page with menu showing </h4>
+
+<img src="https://lh3.googleusercontent.com/W3FuSdUEqvOtPwjnHCZAJQK0xpL_iOaACnswqHYd-k_v8Sp6AE-TcVBiIK0yh4JO1EjmEnKNmRxHoKlYhmKGRDg3D_jGz3P4giZf0RY1SWHp9ADDlPFBpjAGY_QGxGXUepZhRciMVmPCeVVPmjpJugLkteLKVdDpczeUak1ZnxdZ6vWh_w6mlyH9dYsda7GY2mJY2yAcP595nj5quU_GQBiMB7MWBaX5ID_rEjKXjfSccUgYYABY34wct9Ers6lqewmDzfTl0Kbxdv0UAUXEJRq_n49t-KDwvQ3sTJMND0DIXYmYrZreut1-UcvoN1mYmid7uxeu_zdBuhgcXLvgHIE02x2AO5lrgcJow0MUcBljulOgwJmVdmGmoolXxOLSm8xnsxbS102_YG1T_qnv3GKiUrt7ETci9UGCMUSLUjwXfKFPR7iwtP-CqdV5AOF2zrBXUlBZ9W3gb3BGpaXB7tIt1xnpSvKNjwKvAeHY7YAEN946lJa50cy30BH8vPq4Uj7_4ZsJtNen9H-F-40saeKwwPXDWJrhqU6TbkYB2gA=w773-h922-no" />
+
+
+      </div>
+ </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>

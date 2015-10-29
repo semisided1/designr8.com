@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Basic Page Needs
+			–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<meta charset="utf-8">
+		<title>designr8</title>
+		<meta name="description" content="pydoit task app">
+		<meta name="author" content="Darrell Dupas">
+		<!-- Mobile Specific Metas
+			–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- FONT
+			–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+		<!-- CSS
+			–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<link rel="stylesheet" href="/Skeleton/css/normalize.css">
+		<link rel="stylesheet" href="/Skeleton/css/skeleton.css">
+		<link rel="stylesheet" href="/stylesheets/squish-text.css">
+		<link rel="stylesheet" href="/stylesheets/index.css">
+		<!-- Favicon
+			–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<link rel="icon" type="image/ico" href="/images/favicon.ico">
+	</head>
+	<body>
+		<!-- Primary Page Layout
+			–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<div class="container">
+
+			<div class="header">
+				<h1 class="squish-text-image-replacement" >designr8</h1>
+			</div>
+			<!-- div header -->
+			<div class="row">
+				<div class="twelve columns " >
+					<h4>Project: Pydoit a task tracking application (python/gtk) </h4>
+					<p> This desktop application has 2 parts - The end user who needs to be kept on track with the
+						lists, and the list maker, which there is no user interface for, just a structured folder 
+						that contains plain text lists with assosiated icons and sounds.
+					</p>
+					<p>
+						The project code is here: <a href="https://github.com/semisided1/pydoit">
+						https://github.com/semisided1/pydoit
+						</a>
+					<p> Interesting things I could write about from this project: 
+					<ul>
+						<li> 
+							Using glade to design a gui
+						</li>
+						<li>
+							Involving your children in application development
+						</li>
+						<li>
+							Python / sqlite / gtk
+						</li>
+					</ul>
+					
+				</div>
+				<!-- 12 column -->
+			</div>
+
+			<!-- row -->
+
+			<h4>The pydoit user interface.</h4>
+
+			<div class="row" >
+			
+				<div class="eight columns">
+					<img src="https://lh3.googleusercontent.com/kX9NjRmnyfVXi5MpT8Y_NIKkcyzZEEDjJH206JrzO20T9zGwgdu_V7RmD1_yHEojO9tSdAMPUkW5wP9h61E5rt5Oi1QNWgKufc-IpXvQXh29laQxOpCF8BPBa9Z9k5NrNLFzhplTnytc3bf45KYDaon2mwzPb2RmBtFblcfBqVId49FRE-pYdJ-mrYCQ05gOx7W4PN2GHoKypWdSCwFx_mlfrJGt4jyZ5gGXUwT2egOh461DbYA9WmwW_Otk474IC5LrdyKEeZdZeG4afsv4OMwkcSL8ybaWTOCtRjl1kwJccc8Nl894t_B7kfYjY7I9ki4RbQtdEWdj53iiQRtI0SCSn1EZIH6RD9PUh-5isIUij20GaSCiMQK6lfu9d6sfrAVniMoMrLuOW7QFKwVXwPLVyOatDL7kiyLDyfk6nEoP3mQDwtFb1DqwA-RwiOrYXU4hpIs7hbkxWHAbHhdFr3WygJPIgHXM-ixyALbATgUVKPIViYoOemK29SAE5tXuIFOLRvJSXbHE1lw9jkVnAI1BRsCF7IiSPuM_jJOucYg=w632-h619-no" />
+				</div> <!-- eight columns -->
+
+					
+				<div class="four columns">
+					<p>
+								Title bar displays the current user name (this is a multi user 
+								application) and current list. The list on the left displays the completed tasks on the currently
+								selected day. Clicking on a task in the list will undo the task. The calendar control displays which day is currently selected but also, if you click on a task the days that that task was completed will cause the dates in the calendar to appear bold. If a task hasnt been done, clicking on a button in the button panel will add it to the completed list and play the sound file assosiated with that task, as well display any instructions / information at the bottom of the window.
+							</p>
+				</div> <!-- four columns -->
+
+			
+			</div> <!-- row -->
+
+<h4> The pydoit configuration </h4>
+					<div class="twelve columns">
+						<p>As has been mentioned there is no user interface to create the lists. Pydoit expects the lists to follow a certain structure. Each list has its own folder. In that folder there is a text file of the same name which lists the tasks in the order that they should appear in the button panel. Benieth that there are folders each with the same name of each task. Within that folder there are 3 files - A sound file that gets played when the button is pressed. An image that will appear on the button. And some text that describes the task.</p>
+						<p> example: </p>
+						<pre>
+<code>
+[drd@archdd src]$ find lists/bedtime
+lists/bedtime
+lists/bedtime/pajamas
+lists/bedtime/pajamas/pajamas.txt
+lists/bedtime/pajamas/pajamas.ac3
+lists/bedtime/pajamas/pajamas.png
+lists/bedtime/bathroom
+lists/bedtime/bathroom/bathroom.txt
+lists/bedtime/bathroom/bathroom.png
+lists/bedtime/bathroom/bathroom.ac3
+lists/bedtime/brush teeth
+lists/bedtime/brush teeth/brush teeth.png
+lists/bedtime/brush teeth/brush teeth.txt
+lists/bedtime/brush teeth/brush teeth.ac3
+lists/bedtime/stories
+lists/bedtime/stories/stories.png
+lists/bedtime/stories/stories.txt
+lists/bedtime/stories/stories.ac3
+lists/bedtime/bedtime.txt
+lists/bedtime/sleep
+lists/bedtime/sleep/sleep.png
+lists/bedtime/sleep/sleep.ac3
+lists/bedtime/sleep/sleep.txt
+lists/bedtime/snack
+lists/bedtime/snack/snack.txt
+lists/bedtime/snack/snack.ac3
+lists/bedtime/snack/snack.png
+
+[drd@archdd src]$ cat lists/bedtime/bedtime.txt
+snack
+bathroom
+pajamas
+brush teeth
+stories
+sleep
+
+
+</code>
+</pre>
+					</div>
+					<h4> Pydoit authors! </h4>
+					<img src="https://lh3.googleusercontent.com/R8xyXXDnAHCJMtyDRlBIi8ibFs7hs90RTARQz0rzE58ZjtV4sjG7K60V_wldj4XBmGF8eZ0XmU6AGbuFlbID6DbH-RtphYYt4TrrPYYuZbtsjGukSli8NG1fRID5Z54TpIsmo2uLAFLqdiIkU6IeUBJjkDqOYLb1ztbmGu1B7DsGZQQHleDMVvlXZ9pI6Eo_QohXTuTAyMqpqu9EdArhCCVG7arO7WT3qkOszHSD3CCmb1cBY8qxmjj6pZtghpdiDG89lJYyBWrQhR2CASdfGVbYe4eo1plij_WrkvF3WQEV-aJ9YFgId4W7u9atepGRsRVi0HiXlx80Lygt86mpno7bHm4wjGHvqWGkht-g8Q1qgCB8LIRkUXHCRD4mc_8f1kdrtkq9aCJWL02mzMdKtt3IsO6ayOtkXIYAS649ApTDvIAXE8u1UWrHMVCESJ1CZplSlgGzfgkGDmcUAJ6YcRurAUX6y-0kh486JaShvIDmB5EEyzhNPI73H_4r_t5GpKDkEu95GT0ZnWdsbfh55PToxj8_Mt-4F5Zr4ORCKNU=w1065-h678-no" />
+					<h4> Selecting a list </h4>
+					<img src="https://lh3.googleusercontent.com/41xVJjhpkFy3V88F8XSp3bN4lZjD_CqK6DvDpSOI_B7L95ZVEv6kXEZ9nu071Hdz9e1xNuoB-yJGTy81lV0pR6j83FafYDppMmL_9RUWKQQgtEVYkNi66kexU5XnBfNEDQCk1Hf5LyCsJDfIsnhmX3srxKqLzHXt48wr9DR9bRApe1YIp2CMa0HfWHacNBGNy4gKjPOQHm-elCEwv6ngqmLkwlU4dVrYd1J0DxO72IJQckYsGwfqXERjDDK3p-WNqQERQ3qkbAa6uFMcGzyFQxcVfmDeqMibnrosmRU0UObrCxBT3YMLc5WRivO9pNpASmIs1BiUjGj5w-1TbUWpC6WDvL2oyfNWi9Sg6JNc9t_RTg_cQFGYyBQtvC0HAk53YBV9tiBGPoP7mRyEpsWHB05E2pZs--ayuqUi2akNucpoChL186Xk5j26HJCQVQ29HnrFylMpOHHkPLpYa3tNbeQp_t4K4oOxIBAOkOVqztTFNtqqu9UMbNrhbDi-8BOmPdA_zZrxxp9wCfMNNwE6aMRwlV13IXHBkJoTopIA0uA=w1164-h966-no" />
+					<h4> Using technology to teach emotional intelegence!! </h4>
+				</div>
+			</div>
+		</div>
+
+
+
+		</div> <!-- container -->
+	</body>
+</html>

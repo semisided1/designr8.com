@@ -1,0 +1,24 @@
+.header {
+	height : 200px;
+	margin-top : 40px;
+	background-image: url('/images/designr8.png');
+	background-repeat: no-repeat;
+}
+
+div { 
+	display: block;
+}
+/* u-max-full-width from skeleton */
+img { 
+	max-width: 100%;
+  	box-sizing: border-box;
+}
+
+h5 {
+
+	margin-top: 70px;
+}
+
+body {
+	margin-bottom: 100px;
+}
